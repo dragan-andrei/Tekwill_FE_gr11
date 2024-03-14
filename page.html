@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Happy Form</title>
+</head>
+
+<body>
+<form autocomplete="on" method="post" action="url_rvanina">
+    <fieldset>
+        <legend>Basic User Information:</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" autofocus required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="on" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="confpassword">Confirm Password:</label>
+        <input type="password" id="confpassword" name="confpassword" required>
+        <br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male" value="male" required> <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" required> <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="other" required> <label for="other">Other</label>
+        <br>
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob" min="1900-01-01" max="2024-03-14" required>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Address Information</legend>
+        <label for="address">Street Address:</label>
+        <textarea name="address" id="address" style="width: 182px; height: 29px;" required></textarea>
+        <br>
+        <label for="state">Country:</label>
+        <select name="state" id="state" required>
+            <option value="">-Choose State-</option>
+            <option value="USA">USA</option>
+            <option value="Moldova">Moldova</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Iraq">Iraq</option>
+            <option value="Iran">Iran</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="China">China</option>
+            <option value="UAE">United Arab Emirates</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Turkey">Turkey</option>
+
+        </select>
+        <br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required> 
+        <br>
+        <label for="postcode">Postal Code:</label>
+        <input type="text" id="postcode" name="postcode" pattern="[0-9]*" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferences:</legend>
+        <label>Preferred Contact Method:</label>
+        <input type="checkbox" name="conmet1" value="email" checked> Email
+        <input type="checkbox" name="conmet2" value="phone" > Phone
+        <input type="checkbox" name="conmet3" value="postalmain" > Postal Mail
+        <br>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+    </fieldset>
+
+    <fieldset>
+        <legend>Additional Details:</legend>
+        <label for="info">How did you hear about us?</label>
+        <select name="info" id="info" required>
+            <option value="">-Select-</option>
+            <option value="internet">Internet</option>
+            <option value="radio">Radio</option>
+            <option value="telegram">Friends</option>
+            <option value="newspaper">Newspaper</option>
+        </select>
+        <br>
+        <label for="feedback">Feedback/Comments:</label>
+        <textarea name="feedback" id="feedback" style="width: 182px; height: 29px;" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Profile:</legend>
+        <label for="upload_picture">Upload a Profile Picture:</label>
+        <input type="file" id="upload_picture" name="upload_picture" accept="image/jpeg, image/png" required>
+        <br>
+        <label for="website_url">Website URL:</label>
+        <input type="url" id="website_url" name="website_url" required>
+        <br>
+        <label for="experience">Experience Level with HTML:</label>
+        <input type="range" min="1" max="10" value="5" id="experience" name="experience" oninput="displayValue.value=experience.value" >
+        <output id="displayValue">5</output>
+    </fieldset>
+
+    <button type="submit" name="form_submit">Submit</button> 
+    <button type="reset">Reset</button>
+
+</form>
+</body>
+</html>
