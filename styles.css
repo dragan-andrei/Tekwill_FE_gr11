@@ -1,0 +1,16 @@
+
+
+#header {
+    color: blue;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+p.joker {
+    color:rgb(29, 58, 246);
+} 
+
+p {
+    color:red;
+}
+
