@@ -1,0 +1,73 @@
+body {
+    font-family: "Tilillium Web", sans-serif;
+}
+
+#header {
+    background-color: rgb(91, 87, 87);
+    position: relative;
+    width: 610px;
+}
+
+#header li {
+    display: inline-block;
+    padding: 20px;
+    font-size: large;
+    position: relative; /* Изменено на relative, чтобы не использовать наследование позиции */
+    left: 200px; /* Может быть убрано, так как установлено значение position: relative */
+}
+
+#header .dropdown a:hover, /* Цвет ссылок в выпадающем меню при наведении */
+.dropdown-content a.idk:hover{
+    color: red; 
+}
+
+#header .dropdown:hover .dropbtn {
+    color: red; 
+}
+
+#header li a.typic:hover{
+    color:red;
+    text-decoration: underline;
+}
+
+#header li a /* Цвет всех ссылок в шапке */
+ { /* Цвет ссылок "Home" и "About" при наведении */
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#header::before {
+    content: "Logo";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 10px rgb(255, 0, 0);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: -55px;
+    background-color: rgb(91, 87, 87);
+    min-width: 160px;
+    z-index: 1; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 12px 14px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(66, 61, 61);
+}
