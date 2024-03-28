@@ -17,9 +17,14 @@ body {
 }
 
 #header .dropdown a:hover, /* Цвет ссылок в выпадающем меню при наведении */
-.dropdown-content a.idk:hover {
+.dropdown-content a.idk:hover{
     color: red; 
 }
+
+#header .dropdown:hover .dropbtn {
+    color: red; 
+}
+
 #header li a.typic:hover{
     color:red;
     text-decoration: underline;
