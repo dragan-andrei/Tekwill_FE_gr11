@@ -85,14 +85,14 @@ header a:hover{
     position: relative;
     display: flex;
     opacity: 0;
-    bottom: 17%;
-    background-color: rgba(55, 55, 55, 0.9);
-    color: white;
+    bottom: 90%;
+    background-color: rgba(216, 214, 214, 0.9);
+    color: #201f1f;
     width: 100%;
-    height: 20px;
+    justify-content: center;
+    height: 100%;
     transition: opacity 0.3s linear;
-    justify-content: end;
-    align-content: flex-end;
+    align-content: center;
 }
 
 .rightsidebar div.dog1:hover .woff {
