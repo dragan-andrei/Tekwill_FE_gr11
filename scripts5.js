@@ -1,7 +1,7 @@
-const fruits = ["apple", "banana", "orange"];
+const ffruits = ["apple", "banana", "orange"];
 console.log("1. Fruits:");
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]);
+for (let i = 0; i < ffruits.length; i++) {
+    console.log(ffruits[i]);
 }
 
 const numbers = [1, 2, 3, 4, 5];
