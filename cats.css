@@ -1,0 +1,203 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+
+}
+a{
+    color:#5c5cdc;
+}
+
+.grid-container {
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 100px auto 150px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'header header header'
+        'leftsidebar mainpole rightsidebar'
+        'leftsidebar footer footer';
+    background-color: #5c5cdc;
+    border: 7px solid #5c5cdc;
+    grid-gap: 7px;
+}
+
+.leftsidebar {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    grid-area: leftsidebar;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.leftsidebar a {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.leftsidebar a:hover {
+    color: red;
+}
+
+header {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightblue;
+    grid-area: header;
+    padding: 10px;
+}
+
+header a{
+
+    margin-left:10px;
+}
+
+header a:hover{
+
+    color:red;
+}
+
+.rightsidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-area: rightsidebar;
+    background-color: lightblue;
+
+}
+
+.rightsidebar ul{
+    list-style: none ;
+}
+
+.rightsidebar img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+.woff {
+    position: relative;
+
+    display: flex;
+    opacity: 0;
+    bottom: 90%;
+    background-color: rgba(216, 214, 214, 0.9);
+    color: #201f1f;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    transition: opacity 0.3s linear;
+    align-items: center;
+}
+
+.rightsidebar>div:hover .woff {
+    opacity: 1;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    left:100px;
+    align-items: center;
+    background-color: lightblue;
+    grid-area: footer;
+}
+
+footer p{
+    margin-left: 10px;
+}
+
+.mainpole {
+    grid-area: mainpole;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    padding: 10px;
+    background-color: lightblue;
+    grid-gap: 10px;
+}
+
+
+
+
+.mainpole img{
+    width: 100%;
+    height: auto;
+}
+
+.mainpole>div{
+    background-position: center;
+    background-size: cover;
+}
+.mainpole .cat1{
+    position: relative;
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    background-image: url("cats/1.jpeg");
+}
+
+.mainpole .cat2{
+    grid-row: 1 ;
+    grid-column: 3;
+    background-image: url("cats/2.jpeg");
+}
+
+.mainpole .cat5{
+    grid-row: 2 / span 2;
+    grid-column: 3;
+    background-image: url("cats/5.jpg");
+}
+
+
+.mainpole .cat4{
+    grid-row: 3;
+    grid-column: 1;
+    background-image: url("cats/4.jpg");
+}
+.mainpole .cat3{
+    grid-row: 3;
+    grid-column: 2;
+    background-image: url("cats/3.jpeg");
+}
+.mainpole .cat6{
+    grid-row: 4;
+    grid-column: 1;
+    background-image: url("cats/6.jpg");
+}
+.mainpole .cat7{
+    grid-row: 4;
+    grid-column: 2;
+    background-image: url("cats/7.jpg");
+}
+.mainpole .cat8{
+    grid-row: 4;
+    grid-column: 3;
+    background-image: url("cats/8.jpg");
+}
+
+.meo {
+    display: flex;
+    opacity: 0;
+    position: relative;
+    top: 94%;
+
+    background-color: rgba(55, 55, 55, 0.9);
+    color: white;
+    width: 100%;
+    height: 20px;
+    transition: opacity 0.3s linear;
+    justify-content: end;
+    align-content: flex-end;
+
+}
+
+.mainpole>div:hover .meo {
+    opacity: 1;
+}
